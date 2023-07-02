@@ -27,7 +27,8 @@ Este componente:
 - Se apoya en las refs de Vue para tener acceso directo a los elementos del DOM y poder manipularlos con Popper.js.
 
 ## Uso del componente
-Para utilizar este componente, se debe de importar e incluir en los componentes de la instancia de Vue, para posteriormente usar la etiqueta del componente dentro de la plantilla (template) de Vue y pasar el contenido del tooltip y el retraso de aparición (opcional) como atributos del componente. A continuacion un ejemplo:
+Para utilizar este componente, primero se debe descargar el archivo *TheTooltip.vue* que se encuentra dentro de *src/components* y agregarlo al proyecto donde se reutilizara. 
+Dentro del proyecto se debe de importar e incluir en los componentes de la instancia de Vue, para posteriormente usar la etiqueta del componente dentro de la plantilla (template) de Vue y pasar el contenido del tooltip y el retraso de aparición (opcional) como atributos del componente. A continuacion un ejemplo:
 
 ```vue
 <template>
@@ -50,7 +51,7 @@ export default {
 ```
 
 ## Demostracion
-Siguiendo con el ejemplo anterior, mismo que se encuentra en el archivo App.vue, donde se importa y utiliza el Tooltip en un boton, se visualiza de la siguiente manera:
+Siguiendo con el ejemplo anterior, mismo que se encuentra en el archivo *App.vue*, donde se importa y utiliza el Tooltip en un boton, se visualiza de la siguiente manera:
 
 **Visualización del boton**
 
