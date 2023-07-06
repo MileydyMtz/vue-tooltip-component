@@ -1,6 +1,6 @@
 # Documentacion del componente Tooltip
 ## Descripcion:
-El TooltipComponent es un componente reutilizable desarrollado en Vue que muestra un cuadro de texto (tooltip) cuando el usuario coloca el cursor sobre el elemento contenido en el componente. El tooltip es controlado y estilizado usando el marco Popper.js y CSS, respectivamente.
+El Tooltip es un componente reutilizable desarrollado en Vue que muestra un cuadro de texto (tooltip) cuando el usuario coloca el cursor sobre el elemento contenido en el componente. El tooltip es controlado y estilizado usando el marco Popper.js y CSS, respectivamente.
 
 ## Tecnologias usadas
 A continuación se enlistan las tecnologías y librerías utilizadas en el desarrollo de este componente:
@@ -17,7 +17,7 @@ A continuación se enlistan las tecnologías y librerías utilizadas en el desar
 
 ### CSS
 - Los estilos del tooltip están definidos en la seccion de <style> y usan la extencion .scss.
-- Se pueden modificar las variables $tooltip-content-background y $tooltip-text-color para cambiar el color de fondo y el color del texto del tooltip, respectivamente.
+- Se pueden modificar las variables *$tooltip-content-background* y *$tooltip-text-color* para cambiar el color de fondo y el color del texto del tooltip, respectivamente.
 - Los estilos están "scoped", lo que significa que solo se aplicarán a este componente y no afectarán a otros componentes de la aplicación donde se reutilice.
 
 ### Notas
@@ -63,10 +63,11 @@ Siguiendo con el ejemplo anterior, mismo que se encuentra en el archivo *App.vue
 
 
 ## Pruebas
-Las pruebas se han implementado utilizando vitest y vue-test-utils. A continuación se presentan las pruebas implementadas:
+Las pruebas se han implementado utilizando vitest y vue-test-utils. 
+A continuación se presentan las pruebas implementadas:
 
-- renders tooltip content properly: Verifica que el contenido del tooltip se renderice correctamente cuando se pasa el prop content.
-- delays the tooltip visibility: Verifica que el tooltip no se muestre inmediatamente después de que el cursor pasa sobre el componente, pero después del retraso especificado.
-- hides the tooltip on mouse out: Verifica que el tooltip se oculta cuando el cursor deja el componente.
-- does not show tooltip when content is empty: Verifica que el tooltip no se muestre si la prop content está vacía.
-- does not show tooltip without mouseover: Verifica que el tooltip no se muestre si el cursor no ha pasado sobre el componente.
+- **renders tooltip content properly**: Verifica que el contenido del tooltip se renderice correctamente cuando se pasa el prop content.
+- **delays the tooltip visibility**: Verifica que el tooltip no se muestre inmediatamente después de que el cursor pasa sobre el componente, pero después del retraso especificado.
+- **hides the tooltip on mouse out**: Verifica que el tooltip se oculta cuando el cursor deja el componente.
+- **does not show tooltip when content is empty**: Verifica que el tooltip no se muestre si la prop content está vacía.
+- **does not show tooltip without mouseover**: Verifica que el tooltip no se muestre si el cursor no ha pasado sobre el componente.
