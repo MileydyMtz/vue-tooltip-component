@@ -32,7 +32,7 @@ Este componente:
 Para utilizar este componente, primero se debe descargar el archivo *TheTooltip.vue* que se encuentra dentro de *src/components* y agregarlo al proyecto donde se reutilizara. 
 Dentro del proyecto se debe de importar e incluir en los componentes de la instancia de Vue, para posteriormente usar la etiqueta del componente dentro de la plantilla (template) de Vue y pasar el contenido del tooltip y el retraso de aparición (opcional) como atributos del componente.
 
-A continuación un ejemplo:
+A continuación, un ejemplo:
 
 ```vue
 <template>
