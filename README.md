@@ -9,6 +9,8 @@ A continuación, se enlistan las tecnologías y librerías utilizadas en el desa
 * Preprocesador SCSS
 * Vue Test Utils
 * Vitest
+* Prettier
+* ESLint
 
 ## Características del componente
 ### Props
