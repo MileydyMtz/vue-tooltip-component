@@ -14,10 +14,10 @@ A continuación, se enlistan las tecnologías y librerías utilizadas en el desa
 
 ## Características del componente
 ### Props
-* **Content** (requerido): Es el contenido del tooltip que será mostrado. Debe ser un string.
-* **Delay** (opcional): Es el retraso (en milisegundos) antes de que se muestre el tooltip después de que el usuario coloque el cursor sobre el elemento. Si no se proporciona, el valor predeterminado es 500 milisegundos.
+* **Content** (Requerido): Es el contenido del tooltip que será mostrado. Debe ser un string.
+* **Delay** (Opcional): Es el retraso (en milisegundos) antes de que se muestre el tooltip después de que el usuario coloque el cursor sobre el elemento. Si no se proporciona, el valor predeterminado es 500 milisegundos.
 
-### CSS
+### Estilos
 - Los estilos del tooltip están definidos en la seccion de <style> y usan la extensión .scss.
 - Se pueden modificar las variables *$tooltip-content-background* y *$tooltip-text-color* para cambiar el color de fondo y el color del texto del tooltip, respectivamente.
 - Los estilos están "scoped", lo que significa que solo se aplicarán a este componente y no afectarán a otros componentes de la aplicación donde se reutilice.
@@ -67,7 +67,8 @@ Siguiendo con el ejemplo anterior, mismo que se encuentra en el archivo *App.vue
 
 
 ## Pruebas
-Las pruebas se han implementado utilizando vitest y vue-test-utils. 
+Se utiliza la biblioteca Vitest para correr las pruebas y @vue/test-utils para montar el componente.
+
 A continuación, se presentan las pruebas implementadas:
 
 - **renders tooltip content properly**: Verifica que el contenido del tooltip se renderice correctamente cuando se pasa el prop content.
